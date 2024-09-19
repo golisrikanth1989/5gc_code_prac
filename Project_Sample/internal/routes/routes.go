@@ -6,7 +6,7 @@ import (
 )
 
 func NewRouter() http.Handler {
-	mux := http.NewServerMux()
+	mux := http.NewServeMux()
 
 	mux.HandleFunc("/", indexHandler)
 	mux.HandleFunc("/api/data", apiDataHandler)
